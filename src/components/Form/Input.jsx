@@ -1,4 +1,4 @@
-import React from 'react'; // Add this import to resolve the error
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const Input = ({ name, label, type, placeholder, value, onChange, theme }) => {

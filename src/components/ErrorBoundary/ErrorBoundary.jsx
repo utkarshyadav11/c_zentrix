@@ -6,13 +6,12 @@ const ErrorBoundary = ({ children }) => {
 
   useEffect(() => {
     const handleError = (event) => {
-      setHasError(true); // Set the error state to true when an error occurs
+      setHasError(true);
     };
 
-    // Add event listener for uncaught errors
     window.addEventListener('error', handleError);
 
-    // Clean up the event listener
+
     return () => {
       window.removeEventListener('error', handleError);
     };

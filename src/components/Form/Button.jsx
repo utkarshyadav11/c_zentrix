@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'; // Import PropTypes
-import React from 'react'; // Add this import if missing
+import PropTypes from 'prop-types';
+import React from 'react'; 
 
 const Button = ({ label, theme, ...props }) => (
   <button className={`px-4 py-2 rounded ${theme}`} {...props}>
@@ -8,8 +8,8 @@ const Button = ({ label, theme, ...props }) => (
 );
 
 Button.propTypes = {
-  label: PropTypes.string.isRequired, // Ensure label is a required string
-  theme: PropTypes.string.isRequired, // theme is a string for styling
+  label: PropTypes.string.isRequired, 
+  theme: PropTypes.string.isRequired, 
 };
 
 export default Button;

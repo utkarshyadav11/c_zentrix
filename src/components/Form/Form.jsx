@@ -24,7 +24,6 @@ const Form = ({ schema, onSubmitSuccess, theme }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Check for missing required fields
     const missingFields = schema.filter(field => !formData[field.name]);
     if (missingFields.length > 0) {
       setErrorMessage('All fields are required.');
